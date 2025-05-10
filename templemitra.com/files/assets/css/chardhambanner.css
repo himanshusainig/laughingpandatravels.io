@@ -1,0 +1,214 @@
+
+.fre__outerwrap {
+	background-color: rgb(33, 150, 83);
+	font-size: 9px;
+	font-weight: 700;
+	line-height: 6px;
+	color: rgb(255, 255, 255);
+	display: inline-block;
+	position: relative;
+	margin-left: 2px;
+	margin-right: 1px;
+	padding: 5px 5px 4px;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.fre__outerwrap .fre__innerwrap {
+	width: 115%;
+	position: absolute;
+	height: 100%;
+	transform: skew(150deg);
+	animation-name: fre__backplay;
+	animation-duration: 3s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	background: linear-gradient(to right, transparent 40%, rgb(186, 221, 201) 10%, transparent 50%) 0% 0% / 200% 200% no-repeat;
+}
+
+.new-departures {
+	background-color: green;
+	color: white;
+	padding: 3px 7px;
+    font-size: 20px;
+	font-weight: bold;
+	border-radius: 5px;
+	animation: blink 1.5s ease-in-out infinite;
+	margin-left: 10px;
+	/* Space between 'Departures' and 'New' */
+	position: relative;
+	/* Allow positioning relative to its normal place */
+	top: -10px;
+	/* Move it 5px upwards */
+}
+
+@keyframes blink {
+
+	0%,
+	100% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0.5;
+	}
+}
+
+@keyframes blink-effect {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.onlbtn {
+    background-color: green;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    animation: blink-effect 1.5s infinite ease-in-out;
+}
+
+.full-screen-container {
+	height: 40vh;
+	/* Adjust the height as needed */
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	/* box-shadow: 0 4px 8px 0 #03A9F4, 0 6px 20px 0 #03A9F4; */
+}
+
+.banner-image {
+	width: 100%;
+	height: auto;
+	max-height: 40vh;
+	/* Limit height to 70% of the viewport height */
+	/* object-fit: cover; */
+	position: absolute;
+	left: 0;
+	border-radius: 10px;
+
+}
+
+.chardhamban12 {
+	border-radius: 5px;
+	text-align: center;
+	position: absolute;
+	bottom: 20px;
+	/* Positions text towards the bottom */
+	left: 50%;
+	transform: translateX(-50%);
+	/* Horizontally centers the text */
+	color: white;
+	/* White text color for contrast */
+	padding: 8px;
+	background: rgb(255, 255, 255);
+	box-shadow: 0 4px 8px 0 #03A9F4, 0 6px 20px 0 #03A9F4;
+	/* Semi-transparent black background to enhance text visibility */
+}
+
+.chardhamban12 h2,
+.chardhamban12 p {
+	margin: 0 0 10px;
+}
+
+.scroll-indicator {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 20px;
+	color: red;
+}
+
+/* Mobile View Adjustments */
+@media only screen and (max-width: 768px) {
+	.full-screen-container {
+		height: 60vh;
+		/* Make the container taller for better image visibility on small screens */
+	}
+
+	.banner-image {
+		max-height: 60vh;
+		/* Reduce max height for mobile to fit the screen */
+		object-fit: cover;
+		border-radius: 5px;
+		/* Ensure image fills the container */
+	}
+
+	.chardhamban12 {
+		bottom: 10px;
+		/* Move text a bit higher on smaller screens */
+		padding: 15px;
+		/* Adjust padding for better spacing */
+		font-size: 14px;
+		/* Make text smaller to fit the mobile screen */
+	}
+
+	.scroll-indicator {
+		font-size: 18px;
+		/* Smaller arrow icon for mobile */
+	}
+}
+
+/* Extra Small Mobile Adjustments */
+@media only screen and (max-width: 480px) {
+	.full-screen-container {
+		height: 22vh;
+		/* Reduce height further for very small screens */
+	}
+
+	.banner-image {
+		max-height: 20vh;
+		border-radius: 5px;
+		/* Further reduce image height on small screens */
+	}
+
+	.chardhamban12 {
+		bottom: 5px;
+		/* Move text closer to the bottom */
+		font-size: 12px;
+		/* Further reduce text size */
+	}
+
+	.scroll-indicator {
+		font-size: 16px;
+		/* Even smaller arrow for very small screens */
+	}
+}
+
+.blog-page-include .heding-pac {
+    text-transform: uppercase;
+     font-size: 15px; 
+    text-shadow: 1px 1px 1px black;
+}
+
+.blog-page-include .new-departures {
+    	background-color: green;
+	color: white;
+	padding: 3px 7px;
+    font-size: 20px;
+	font-weight: bold;
+	border-radius: 5px;
+	animation: blink 1.5s ease-in-out infinite;
+	margin-left: 10px;
+	/* Space between 'Departures' and 'New' */
+	position: relative;
+	/* Allow positioning relative to its normal place */
+	top: 3px;
+}
+
+.blog-page-include .full-screen-container {
+   max-height: 173px;
+}
+
+
+
+
+
+
+
+
+
